@@ -1,16 +1,51 @@
-# React + Vite
+# LRU Page Replacement Algorithm Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based simulator that demonstrates how the Least Recently Used (LRU) page replacement algorithm works through an interactive and visual interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✅ What it does
 
-## React Compiler
+- Simulates the Least Recently Used (LRU) page replacement algorithm
+- Accepts a custom reference string as input
+- Automatically computes page faults and page hits
+- Displays results in a structured page frame table with color-coded states
+- Shows fault rate and hit rate for quick analysis
+- Helps students visualize how LRU works in operating systems
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💡 Why we built it
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project was built as part of an academic group project to better understand memory management and page replacement algorithms, specifically Least Recently Used (LRU).
+
+As the team leader, I handled the frontend development, focusing on:
+
+- Designing an intuitive and visually clear interface
+- Translating the LRU logic into an interactive web experience
+- Making the simulator easy to use for students and educators
+- Applying modern frontend tools to an OS-related concept
+
+---
+
+## 🛠 Tech used
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo" />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" height="40" alt="tailwindcss logo" />
+  <img width="12" />
+</div>
+
+---
+
+## 🧩 Challenges solved
+
+- Implementing the LRU algorithm accurately with frame tracking
+- Building a two-step reveal interaction (show faults first, then full solution)
+- Designing a color-coded table that clearly distinguishes faults, hits, and replaced frames
+- Handling dynamic reference string inputs without breaking the simulation
+- Making the layout responsive across mobile and desktop screens
+- Keeping the UI clean and informative without overwhelming the user
+
+---
