@@ -1,3 +1,7 @@
+
+<img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/db37c7e6-bac5-48b5-b3a4-273ed9adb8ad" />
+
+
 # LRU Page Replacement Algorithm Simulator
 
 A web-based simulator that demonstrates how the Least Recently Used (LRU) page replacement algorithm works through an interactive and visual interface.
@@ -47,3 +51,5 @@ As the team leader, I handled the frontend development, focusing on:
 - Making the layout responsive across mobile and desktop
 
 ---
+
+<a href="https://lru-page-replacement-alg.vercel.app/" target="_blank"> <img src="https://img.shields.io/static/v1?message=Live%20Demo&logo=vercel&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="live demo logo" /> </a>
