@@ -4,13 +4,15 @@ import { Header } from "./components/Header";
 import { Input } from "./components/Input";
 import { RevealOnScroll } from "./components/RevealOnScroll";
 import { Output } from "./components/Output";
+import { Footer } from "./components/Footer.jsx";
 
 function App() {
+  // State managements
   const [result, setResult] = useState(null);
   const [clickCount, setClickCount] = useState(0);
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-zinc-950 px-6  md:px-10 pt-30 md:pt-10">
+    <main className="relative min-h-screen overflow-x-hidden bg-zinc-950 px-6  md:px-10 pt-30 md:pt-10 flex flex-col justify-between">
       <div className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-[26vh] w-full max-w-480 bg-[radial-gradient(ellipse_at_center_top,rgba(234,147,39,0.12)_0%,transparent_70%)] sm:h-[32vh] md:h-[50vh]" />
       <RevealOnScroll>
         <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center gap-8 pb-10 sm:gap-10">
@@ -20,9 +22,10 @@ function App() {
             setClickCount={setClickCount}
             setResult={setResult}
           />
-          <Output />
+          {result && <Output result={result} clickCount={clickCount} />}
         </div>
       </RevealOnScroll>
+      <Footer />
     </main>
   );
 }

@@ -47,3 +47,8 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.table-style {
+  scrollbar-color: rgb(113 113 123) transparent;
+  scrollbar-width: thin;
+}
