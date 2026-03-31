@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+import { Card } from "./ui/Card";
 import { useState } from "react";
 import { lruPageReplacement } from "../lruAlgorithm";
 
