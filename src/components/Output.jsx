@@ -83,7 +83,9 @@ export const Output = ({ result, clickCount }) => {
                     </td>
                     {frame.map((cell, stepIndex) => (
                       <td key={stepIndex} className="px-2 py-1.5 text-center">
-                        <div className={`w-9 h-9 mx-auto rounded-lg flex items-center justify-center text-sm font-bold border ${cell === "*" ? "text-lime-500" : cell === "" ? "text-black" : "text-red-500"}`}>
+                        <div
+                          className={`w-9 h-9 mx-auto rounded-lg flex items-center justify-center text-sm font-bold border ${cell === "*" ? "text-lime-500" : cell === "" ? "text-black" : "text-red-500"}`}
+                        >
                           {cell}
                         </div>
                       </td>

@@ -15,11 +15,11 @@ export const Input = ({ clickCount, setClickCount, setResult }) => {
       // then split("") splits every character into individual array items
       const pages = inputValue.trim().split(/\s+/).join("").split("");
       const result = lruPageReplacement(pages);
-      setResult({...result, pages});
+      setResult({ ...result, pages });
       setClickCount(1);
     } else {
       setClickCount(0);
-      setInputValue("")
+      setInputValue("");
       setResult(null);
     }
   };
